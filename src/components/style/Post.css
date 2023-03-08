@@ -1,0 +1,89 @@
+.post {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(233, 220, 220);
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 70px;
+  color: darkgreen;
+}
+
+.post-header {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-header-name {
+  font-family: Montserrat, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+.post-header-nickname {
+  font-family: Montserrat, Verdana, sans-serif;
+  margin-left: 50px;
+}
+.post-header-date {
+  font-family: Montserrat, Verdana, sans-serif;
+  margin-left: 50px;
+}
+.post-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-image img {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 80px;
+  display: block;
+  height: auto;
+  width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  margin-bottom: 20px;
+}
+.post-header-ava img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 30px 0 50px;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.Hcontent {
+  margin-left: 130px;
+  font-family: Montserrat, Verdana, sans-serif;
+}
+.post-actions {
+  margin-bottom: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likesCount::before {
+  content: url("https://lonaver.github.io/hw-react/static/media/bubbles4.9edf28a2eb9b2eb0661d.svg ");
+  margin-right: 5px;
+}
+.looks::before {
+  content: url("https://lonaver.github.io/hw-react/static/media/spinner10.f3362b6ead69c21601bc.svg");
+  margin-right: 5px;
+}
+.comments::before {
+  content: url("https://lonaver.github.io/hw-react/static/media/heart.5924ac230f509a093163.svg ");
+  margin-right: 5px;
+}
+.downloads::before {
+  content: url("https://lonaver.github.io/hw-react/static/media/download.e556a8aeb5c555fa8c26.svg");
+  margin-right: 5px;
+}

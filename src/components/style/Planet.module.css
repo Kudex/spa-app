@@ -1,0 +1,36 @@
+.block {
+  margin: 10px auto;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+}
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  width: 300px;
+  height: 350px;
+  font-size: 24px;
+  text-align: left;
+  animation: show_1 5s ease;
+  color: black;
+}
+.planets > span {
+  display: block;
+  width: 300px;
+}
+.planets > img {
+  width: 300px;
+  height: 300px;
+}
+
+@keyframes show_1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

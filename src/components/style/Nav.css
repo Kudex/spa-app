@@ -1,0 +1,234 @@
+.header {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(16, 45, 83, 0.8);
+}
+.header_container {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+.header_logo {
+  border-radius: 50%;
+  background-image: url("https://img.freepik.com/free-vector/illustration-circle-stamp-banner-vector_53876-27183.jpg?w=2000");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+}
+
+.header_menu {
+}
+.menu {
+}
+.menu_icon {
+  display: none;
+}
+.menu_body {
+}
+.menu_list {
+}
+.menu_list > li {
+  position: relative;
+  margin: 0px 0px 0px 20px;
+  list-style-type: none;
+}
+.menu_link {
+  color: #fff;
+  font-size: 18 px;
+}
+.menu_link:hover {
+  text-decoration: dotted;
+}
+.menu_sub-list {
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  right: 0;
+  background-color: rgba(37, 33, 33, 0.521);
+  padding: 15px;
+  min-width: 200px;
+}
+.menu_sub-list li {
+  margin: 0px opx 10px 0px;
+  list-style-type: none;
+}
+.menu_sub-list li:last-child {
+  margin: 0;
+}
+.menu_sub-link {
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+}
+
+.menu_sub-link:hover {
+  text-decoration: dotted;
+}
+
+.menu_arrow {
+  display: none;
+}
+/*-------------------*/
+body._pc .menu_list > li:hover .menu_sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body._touch .menu_list > li {
+  display: flex;
+  align-items: center;
+}
+
+body.touch .menu_link {
+  flex: 1 1 auto;
+}
+
+body._touch .menu_arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 5px;
+  transition: transform 0.3s ease 0s;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+
+body._touch .menu_list > li._active .menu_sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body._touch .menu_list > li._active .menu_arrow {
+  transform: rotate(-180deg);
+}
+/*-------------------*/
+
+@media (min-width: 767px) {
+  .menu_list {
+    display: flex;
+    align-items: center;
+  }
+  .menu_lis > li {
+    padding: 10 px 0;
+  }
+  .menu_sub-list {
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+@media (max-width: 767px) {
+  /*три полоски*/
+  .menu_icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .menu_icon span,
+  .menu_icon::before,
+  .menu_icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0, 3s ease 0s;
+    background-color: #fff;
+  }
+  .menu_icon::before,
+  .menu_icon::after {
+    content: "";
+  }
+  .menu_icon::before {
+    top: 0;
+  }
+  .menu_icon::after {
+    bottom: 0;
+  }
+  .menu_icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  /*трансформирем полоски*/
+  .menu_icon._active span {
+    top: 50%;
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu_icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu_icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .menu_body {
+    position: fixed;
+    top: 0;
+    left: -1000%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px 30px 30px 30px;
+    transition: left 0, 3s ease 0s;
+    overflow: auto;
+  }
+  .menu_body._active {
+    left: 0;
+  }
+  .menu_body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: #3b526f;
+    z-index: 2;
+  }
+  .menu_list > li {
+    flex-wrap: wrap;
+    margin: 0px 0px 30px 0px;
+  }
+  .menu_list > li:last-child {
+    margin-bottom: 0;
+  }
+  .menu_list > li._active .menu_sub-list {
+    display: block;
+  }
+  .menu_link {
+    font-size: 24px;
+  }
+  .menu_sub-list {
+    position: relative;
+    background-color: #fff;
+    flex: 1 1 100%;
+    margin: 20px 0px 0px 0px;
+    display: none;
+  }
+  .menu_sub-link {
+    font-size: 20px;
+    color: #eeeaea;
+  }
+}
