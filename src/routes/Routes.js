@@ -15,19 +15,19 @@ export const appRotes = {
 
   posts: {
     id: 2,
-    path: "/CURSOR_React_hw_20//posts",
+    path: "/posts",
     element: <PostPage />,
   },
 
   planets: {
     id: 3,
-    path: "/CURSOR_React_hw_20/photo",
+    path: "/photo",
     element: <PlanetPage />,
   },
 
   contacts: {
     id: 4,
-    path: "/CURSOR_React_hw_20/contacts",
+    path: "/contacts",
     element: <ContactsPage />,
   },
 };
