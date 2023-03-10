@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.56bcf34a.css",
-    "main.js": "/static/js/main.2ce2eaff.js",
-    "static/js/787.c15ce9ce.chunk.js": "/static/js/787.c15ce9ce.chunk.js",
-    "static/media/DV.jpg": "/static/media/DV.3b4e825cdc0e17e13ef9.jpg",
-    "index.html": "/index.html",
-    "static/media/woman.svg": "/static/media/woman.8d4a692542d455b024bd.svg",
-    "static/media/man.svg": "/static/media/man.843b0c3f40818ecf3a4c.svg",
-    "main.56bcf34a.css.map": "/static/css/main.56bcf34a.css.map",
-    "main.2ce2eaff.js.map": "/static/js/main.2ce2eaff.js.map",
-    "787.c15ce9ce.chunk.js.map": "/static/js/787.c15ce9ce.chunk.js.map"
+    "main.css": "/spa-app/static/css/main.341cd58a.css",
+    "main.js": "/spa-app/static/js/main.c1ac74b6.js",
+    "static/js/787.c15ce9ce.chunk.js": "/spa-app/static/js/787.c15ce9ce.chunk.js",
+    "static/media/DV.jpg": "/spa-app/static/media/DV.3b4e825cdc0e17e13ef9.jpg",
+    "index.html": "/spa-app/index.html",
+    "static/media/woman.svg": "/spa-app/static/media/woman.8d4a692542d455b024bd.svg",
+    "static/media/man.svg": "/spa-app/static/media/man.843b0c3f40818ecf3a4c.svg",
+    "main.341cd58a.css.map": "/spa-app/static/css/main.341cd58a.css.map",
+    "main.c1ac74b6.js.map": "/spa-app/static/js/main.c1ac74b6.js.map",
+    "787.c15ce9ce.chunk.js.map": "/spa-app/static/js/787.c15ce9ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56bcf34a.css",
-    "static/js/main.2ce2eaff.js"
+    "static/css/main.341cd58a.css",
+    "static/js/main.c1ac74b6.js"
   ]
 }
